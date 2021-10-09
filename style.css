@@ -14,6 +14,7 @@
   --color-yellow: #fff7d1;
   --color-orange: #feb546;
   --color-black: #000000;
+  --color-main: #75d8f9;
 
   /* Font size */
   --font-large: 48px;
@@ -401,6 +402,26 @@ p {
   transition: all var(--animation-duration) ease-in;
 }
 
+/* 화살표  */
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  font-size: 50px;
+  color: var(--color-white);
+  background-color: var(--color-main);
+  border-radius: 50%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 300ms ease-in;
+}
+
+.arrow-up.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
 .contact__links i:hover {
   transform: scale(1.1);
   color: #a7e8dd;
